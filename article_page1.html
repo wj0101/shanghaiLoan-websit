@@ -219,7 +219,13 @@
         </div>
     </section>
 </div> <!-- /container -->
-
+<!-- PRELOADER -->
+<div id="preloader">
+    <div class="inner">
+        <span class="loader"></span>
+    </div>
+</div>
+<!-- /PRELOADER -->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -281,7 +287,9 @@
         return "";
     }
 </script>
-
+<script>
+    jQuery("#preloader").length>0&&jQuery(window).on("load",function(){jQuery("#preloader").fadeOut(1000,function(){jQuery("#preloader").remove()})});
+</script>
 
 </body>
 </html>

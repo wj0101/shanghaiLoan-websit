@@ -289,7 +289,13 @@
 
     </div>
 </div> <!-- /container -->
-
+<!-- PRELOADER -->
+<div id="preloader">
+    <div class="inner">
+        <span class="loader"></span>
+    </div>
+</div>
+<!-- /PRELOADER -->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -352,18 +358,7 @@
     }
 </script>
 <script>
-    $.ajax({
-        type : "post",
-        url : "/transactionDetails",
-        contentType : "application/x-www-form-urlencoded; charset=UTF-8",
-        contentType : "application/x-javascript; charset=UTF-8",
-        contentType : "text/html",
-        contentType : "application/json",
-        dataType:"json",
-        success : function(data) {
-            $("#myTargetElement").html(data.totalBorrower);//成功借款人数
-        }
-    });
+    jQuery("#preloader").length>0&&jQuery(window).on("load",function(){jQuery("#preloader").fadeOut(1000,function(){jQuery("#preloader").remove()})});
 </script>
 
 </body>
