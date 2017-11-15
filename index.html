@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylesfont.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+<body>
+
+
+<div id="topBar" class="hidden-xs ">
+    <div class="container">
+        <!-- right -->
+        <ul class="top-links list-inline pull-right topLine-right">
+            <li class="text-welcome hidden-xs-down">
+                <span class="font16 color999" id="login_bt">您好，
+                    <a href="https://member.niwodai.com/login.html" class="mar_l10 toplogin" title="登录">请登录</a>
+                    <a href="http://www.niwodai.com/register.html" class="mar_r10 mar_l10 toplogin" title="注册">免费注册</a>
+                </span>
+            </li>
+            <li class="mr10">
+                <span class="font14">
+					<a href="http://www.niwodai.com/enterprise/index/regInit.do?artId=5820160000015802" class="mar_r10 mar_l10 toplogin">企业理财</a>
+				</span>
+            </li>
+            <li class="mr10 mobileIcon">
+                <span class="font14"><a href="http://www.niwodai.com/event.mhtml?artId=5820160000008230&amp;h&amp;f" class="link_mobile mar_r20" target="_blank">
+                    <i class="icon icon_moible">&nbsp;</i>手机客户端
+					<map name="Map">
+                      <area shape="rect" coords="154,40,256,153" href="http://www.niwodai.com/event.mhtml?artId=5820160000008230&amp;h&amp;f" target="_blank">
+                      <area shape="rect" coords="424,41,517,150" href="http://www.niwodai.com/event.mhtml?&amp;artId=3800000794998139" target="_blank">
+                    </map>
+					</a>
+                </span>
+                <div class="mobileImg">
+                    <img src="https://static.niwodai.com/Public/Static/201603/css/font/topbg_b14926.png" usemap="#Map">
+                </div>
+            </li>
+            <li class="mr10 weixinIcon">
+                <span class="font14">
+                    <a href="javascript:;" class="link_weibo mar_r10" target="_blank">
+                        <i class="icon icon_weibo">&nbsp;</i>
+                        微信客服
+                    </a>
+                </span>
+                <div class="weixinImg">
+                    <img src="https://static.niwodai.com/Public/Static/201603/css/font/topbg_b14925.png" class="">
+                </div>
+            </li>
+            <li class="mr10">
+                <span class="font14"><a href="http://weibo.com/niwodai" target="_blank" class="link_weixin"><i class="icon icon_weixin">&nbsp;</i></a></span>
+            </li>
+            <li class="font14 color999">
+                市场有风险，投资需谨慎
+            </li>
+        </ul>
+        <!-- left -->
+        <ul class="top-links list-inline topLine visible-lg visible-md pull-left">
+            <li>
+                <span class="hotLink">
+                    <i class="icon icon_tel">&nbsp;</i>
+                    客服热线
+                    <em class="Numfont mar_l10">
+                    &nbsp;400-680-8888</em>
+                </span>
+            </li>
+        </ul>
+
+    </div>
+</div>
+
+<div id="header" class="navbar-toggleable-md sticky shadow-after-3 clearfix hidden-xs ">
+    <!-- TOP NAV -->
+    <header id="topNav">
+        <div class="container">
+            <!-- Logo -->
+            <a class="pull-left logoDream" title="给梦想可能" href="http://www.niwodai.com">
+                <h1 class="pull-left logo">
+                    <img width="90%" alt="你我贷" src="https://static.niwodai.com/Public/Static/201603/images/logo.png" class="img-responsive">
+                </h1>
+                <div class="pull-left slogan hidden-sm hidden-md" id="headLogo">
+                    <img src="https://static.niwodai.com/Public/Static/201603/images/slogan.png" align="给梦想可能" class="img-responsive" width="90%">
+                </div>
+            </a>
+
+
+            <div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
+                <nav class="nav-main">
+                    <ul id="topMain" class="nav nav-pills nav-main">
+                        <li class="dropdown"><!-- PAGES -->
+                            <a title="首页" href="http://www.niwodai.com" rel="nofollow" class="nav_link">首页</a>                        </li>
+                        <li class="dropdown"><!-- PAGES -->
+                            <a class="dropdown-toggle" href="#">
+                                我要投资
+                            </a>
+                            <ul class="dropdown-menu" style="padding-top: 45px;top: 15px">
+                                <li class="dropdown">
+                                    <a href="http://www.niwodai.com/inteBid/loadingInteBidPage.do" class="investName_link">有道智投</a>                                </li>
+                                <li class="dropdown">
+                                    <a href="https://member.niwodai.com/baiduFina/newPeople.do" class="investName_link">新手专区</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="https://member.niwodai.com/xiangmu" class="investName_link">新标专区</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="https://member.niwodai.com/zhuanrang/" class="investName_link">转让专区</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><!-- PAGES -->
+                            <a class="dropdown-toggle" href="#">
+                                我要借款
+                            </a>
+                            <ul class="dropdown-menu" style="padding-top: 45px;top: 15px">
+                                <li class="dropdown">
+                                    <a href="http://www.niwodai.com/daikuan/jiekuan.html" class="investName_link">借款产品</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="http://www.niwodai.com/help/jiekshenqing.html" class="investName_link">借款攻略</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown hidden-sm"><!-- PAGES -->
+                            <a title="新手导航" href="http://www.niwodai.com/activity.mhtml?artId=3800001227739922&amp;f&amp;h" class="nav_link">新手导航 </a>
+                        </li>
+                        <li class="dropdown hidden-sm"><!-- PAGES -->
+                            <a title="社区" href="http://club.niwodai.com" class="nav_link">社区 </a>
+                        </li>
+                        <li class="dropdown hidden-sm"><!-- PAGES -->
+                            <a href="http://static2.niwodai.com/Public/Static/nwd/website/pc/disclosure/index.html" class="nav_link">信息披露</a>
+                        </li>
+                        <li class="dropdown"><!-- PAGES -->
+                            <div class=" LedgerCon" href="#">
+                                <a class="navphoto pull-left" href="https://member.niwodai.com/member/Investors.html" title="我的账户">
+                                    <i class=" relatives">
+                                        <img id="small-tx" src="https://static.niwodai.com/Public/Static/201603/manage/img/smalltx.png">
+                                        <img id="smallImg" alt="头像" src="https://static.niwodai.com/Public/Static/201603/manage/images/touxiang.jpg" class="smallmytxPic" style="top: 0">
+                                    </i></a>
+
+                                <div class="Ledger_name pad_t5">
+                                    <a title="我的账户" href="http://www.niwodai.com/login.html" class="dropdown-toggle">我的账户</a>
+                                    <em class="icon_base  icon_base_navedown mar_l10"></em>
+                                </div>
+                            </div>
+                            <ul class="dropdown-menu" style="padding-top: 52px;top: 8px;min-width: 155px">
+                                <li class="dropdown">
+                                    <a href="http://www.niwodai.com/login.html" class="listName_link">消息中心</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="http://www.niwodai.com/login.html" class="listName_link">资金记录</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="http://www.niwodai.com/login.html" class="listName_link">有道智投</a>                                </li>
+                                <li class="dropdown">
+                                    <a href="http://www.niwodai.com/login.html" class="listName_link">我的债权</a>                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </nav>
+            </div>
+
+        </div>
+    </header>
+    <!-- /Top Nav -->
+
+</div>
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top visible-xs ">
+    <div class="container">
+        <div class="navbar-header ">
+            <a class="navbar-brand-logo" href="#"><img src="img/logo.png" alt="" width="60%" class="img-responsive center-block"></a>
+        </div>
+    </div>
+</nav>
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron hidden-xs">
+    <img class="center-block img-responsive" src="img/soe01_02.jpg" alt="我要借款" >
+</div>
+
+<div class="container posts">
+    <!-- Example row of columns -->
+    <div class="row mb20">
+        <div class="col-lg-4 col-md-4 media col-sm-4 col-xs-12 hidden-xs">
+            <div class="entry-card border-1px">
+                <div class="media-left middle hidden-sm hidden-xs">
+                    <img class="center-block img-responsive" src="img/soe01_05-04.png" alt="我要借款" width="56%">
+                </div>
+                <div class="media-body">
+                    <h2 class="font20 mt30 clearfix mb20">
+                        <i class="loanIcon visible-sm public" ></i>
+                        <span>我要借款</span>
+                    </h2>
+                    <p class="font14">无抵押信用借款</p>
+                    <p class="font14">2小时到账</p>
+                    <p class="font14 mb30">分期还款，月供无压力</p>
+                </div>
+            </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 col-md-4 media col-sm-4 col-xs-12 hidden-xs">
+            <div class="entry-card border-1px">
+                <div class="media-left middle hidden-sm hidden-xs">
+                    <img class="center-block img-responsive" src="img/soe01_05.png" alt="我要投资"  width="56%">
+                </div>
+                <div class="media-body">
+                    <h2 class="font20 mt30 clearfix mb20">
+                        <i class="investIcon visible-sm public" ></i>
+                        <span>我要投资</span>
+                    </h2>
+                    <p class="font14">风险备用金保障安全</p>
+                    <p class="font14">低门槛，50元起投</p>
+                    <p class="font14 mb30">高收益，年化11%</p>
+                </div>
+            </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 col-md-4 media col-sm-4 col-xs-12 hidden-xs">
+            <div class="entry-card border-1px">
+                <div class="media-left middle hidden-sm hidden-xs">
+                    <img class="center-block img-responsive" src="img/soe01_11.png" alt="平台介绍" width="56%">
+                </div>
+                <div class="media-body">
+                    <h2 class="font20 mt30 clearfix mb20">
+                        <i class="platformIcon public visible-sm" ></i>
+                        <span>平台介绍</span>
+                    </h2>
+                    <p class="font14">国内领先的投融资平台</p>
+                    <p class="font14">解决中小微融资难题</p>
+                    <p class="font14 mb30">帮投资者实现财富增值</p>
+                </div>
+            </div>
+        </div><!-- /.col-lg-4 -->
+    </div>
+    <div class="row content mb20">
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+            <div class="border-1px">
+                <!-- Nav tabs -->
+                <ul class="nav nav-pills" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#home" aria-controls="home" role="tab" data-toggle="tab">
+                            <i class="icon-seo12 glyphicon  visible-xs"></i>
+                            我要借款
+                        </a>
+                    </li>
+                    <li role="presentation"  class="investment">
+                        <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
+                            <i class="icon-seo1 glyphicon visible-xs"></i>
+                            我要投资
+                        </a>
+                    </li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="home">
+                        <div class="row xs-pad15">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 flex xs-border1 xs-mb20">
+                                <div class="mobile-description-text">
+                                    <h2 class="main-description-text">
+                                        【APP快速借款】<span class="colorBlue">1000-30000元</span>
+                                    </h2>
+                                    <p class="mt20"><span class="tags colorBlue mr10">1分钟申请</span><span class="tags colorBlue">快至2小时到账</span></p>
+                                    <p class="subtext mt30">
+                                        芝麻分、信用卡、公积金、工资卡，只要你有其中一项，即可申请。
+                                    </p>
+                                </div><!-- description text -->
+                                <div class="main-mobile-image-container hidden-xs">
+                                    <img src="img/er.jpg" alt="Mobile app" class="center-block img-responsive" width="56%">
+                                    <div class="guidance hidden-xs">扫描下载手机APP，立即快速借款</div>
+                                </div>
+                                <div class="circular visible-xs"><a href="https://ka.niwodai.com/loans-mobile/product.do?method=index" class="circularText">立即<br>借款</a></div>
+                            </div>
+                            <h5 class="page-header hidden-xs"></h5>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 flex xs-border1 xs-mb20">
+                                <div class="mobile-description-text">
+                                    <h2 class="main-description-text">
+                                        【线下借款】最高可借<span class="colorBlue">50万元</span>
+                                    </h2>
+                                    <p class="mt20"><span class="tagsOr colorOr mr10">需至门店</span></p>
+                                    <p class="subtext mt30">
+                                        房贷、车贷、寿险保单、社保公积金，只要你有其中一项，立可申请
+                                    </p>
+                                </div><!-- description text -->
+                                <div class="main-mobile-image-container">
+                                    <img src="img/soe01_16.png" alt="Mobile app" class="center-block img-responsive" width="65%">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 visible-xs xs-mb20">
+                                <div class="span-one-second xs-border-1px">
+                                    <div class="header-top clearfix">
+                                        <h3>宁波贷款相关文章</h3>
+                                        <a href="article.html" class="more">更多</a>
+                                    </div>
+                                    <ul class="article">
+                                        <li class="xs-border-bottom">
+                                            <div class="title-top">
+                                                <p><a href="article_page1.html">阿里金融低调扩阿里金融低调扩张再设小贷公司神秘离岸公司浮现贷公司神秘离岸公司浮现</a></p>
+                                            </div>
+                                        </li>
+                                        <li class="xs-border-bottom">
+                                            <div class="title-top">
+                                                <p><a href="article_page1.html">银行信贷向小微企业倾斜提供定制的金融产品</a></p>
+                                            </div>
+                                        </li>
+                                        <li class="xs-border-bottom">
+                                            <div class="title-top">
+                                                <p><a href="article_page1.html">宁波银行入驻金华浙中金融再添新军</a></p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="title-top">
+                                                <p><a href="article_page1.html">上半年西藏贷款突破800亿元</a></p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="profile">
+                        <div class="table-responsive hidden-xs">
+                            <div class="moreli hidden-xs"><a href="http://www.niwodai.com/xiangmu" class="more">更多</a></div>
+                            <dl class="table-wh">
+                                <dt class="topPro">秒批借款</dt>
+                                <dd>
+                                    <b>借款金额：<span class="colorBlack pr10">3000</span></b>
+                                    <b>约定借款年化利率：<span class="colorOrange fontW600 pr10">10%</span></b>
+                                    <b>期限：<span class="colorBlack pr10">12个月</span></b>
+                                    <b>进度：<span class="colorBlack pr10">65%</span></b>
+                                    <button class="label label-orange">投资</button>
+                                </dd>
+                            </dl>
+                            <dl class="table-wh">
+                                <dt class="topPro">秒批借款</dt>
+                                <dd>
+                                    <b>借款金额：<span class="colorBlack pr10">3000</span></b>
+                                    <b>约定借款年化利率：<span class="colorOrange fontW600 pr10">10%</span></b>
+                                    <b>期限：<span class="colorBlack pr10">12个月</span></b>
+                                    <b>进度：<span class="colorBlack pr10">65%</span></b>
+                                    <button class="label label-orange">投资</button>
+                                </dd>
+                            </dl>
+                            <dl class="table-wh">
+                                <dt class="topPro">秒批借款</dt>
+                                <dd>
+                                    <b>借款金额：<span class="colorBlack pr10">3000</span></b>
+                                    <b>约定借款年化利率：<span class="colorOrange fontW600 pr10">10%</span></b>
+                                    <b>期限：<span class="colorBlack pr10">12个月</span></b>
+                                    <b>进度：<span class="colorBlack pr10">65%</span></b>
+                                    <button class="label label-orange">投资</button>
+                                </dd>
+                            </dl>
+                            <dl class="table-wh">
+                                <dt class="topPro">秒批借款</dt>
+                                <dd>
+                                    <b>借款金额：<span class="colorBlack pr10">3000</span></b>
+                                    <b>约定借款年化利率：<span class="colorOrange fontW600 pr10">10%</span></b>
+                                    <b>期限：<span class="colorBlack pr10">12个月</span></b>
+                                    <b>进度：<span class="colorBlack pr10">65%</span></b>
+                                    <button class="label label-orange">投资</button>
+                                </dd>
+                            </dl>
+                            <dl class="table-wh">
+                                <dt class="topPro">秒批借款</dt>
+                                <dd>
+                                    <b>借款金额：<span class="colorBlack pr10">3000</span></b>
+                                    <b>约定借款年化利率：<span class="colorOrange fontW600 pr10">10%</span></b>
+                                    <b>期限：<span class="colorBlack pr10">12个月</span></b>
+                                    <b>进度：<span class="colorBlack pr10">65%</span></b>
+                                    <button class="label label-orange">投资</button>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="table-responsive visible-xs">
+                            <div class="headerPro">
+                                理财产品
+                                <a href="https://m.niwodai.com/financial/financialList.do" class="more">更多</a>
+                            </div>
+                            <dl class="table-wh table-xs">
+                                <dt class="topPro">秒批借款</dt>
+                                <dd>
+                                    <div>
+                                        约定借款年化利率：<P class="colorOrange fontW600 pr10 xs-font16">10%</P>
+                                    </div>
+                                    <div>
+                                        <span>
+                                            借款金额：<span class="colorBlack pr10 fontW600 xs-font14">3000</span>
+                                        </span>
+                                        <p>
+                                            期限：<span class="colorBlack pr10 fontW600 xs-font14">12个月</span>
+                                        </p>
+                                    </div>
+
+
+                                    <button class="label label-orange">投资</button>
+                                </dd>
+                            </dl>
+                            <dl class="table-wh table-xs">
+                                <dt class="topPro">秒批借款</dt>
+                                <dd>
+                                    <div>
+                                        约定借款年化利率：<P class="colorOrange fontW600 pr10 xs-font16">10%</P>
+                                    </div>
+                                    <div>
+                                        <span>
+                                            借款金额：<span class="colorBlack pr10 fontW600 xs-font14">3000</span>
+                                        </span>
+                                        <p>
+                                            期限：<span class="colorBlack pr10 fontW600 xs-font14">12个月</span>
+                                        </p>
+                                    </div>
+
+
+                                    <button class="label label-orange">投资</button>
+                                </dd>
+                            </dl>
+                            <dl class="table-wh table-xs">
+                                <dt class="topPro">秒批借款</dt>
+                                <dd>
+                                    <div>
+                                        约定借款年化利率：<P class="colorOrange fontW600 pr10 xs-font16">10%</P>
+                                    </div>
+                                    <div>
+                                        <span>
+                                            借款金额：<span class="colorBlack pr10 fontW600 xs-font14">3000</span>
+                                        </span>
+                                        <p>
+                                            期限：<span class="colorBlack pr10 fontW600 xs-font14">12个月</span>
+                                        </p>
+                                    </div>
+
+
+                                    <button class="label label-orange">投资</button>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="row xs-pad15">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 visible-xs xs-mb20">
+                                <div class="span-one-second xs-border-1px">
+                                    <div class="header-top clearfix">
+                                        <h3>宁波投资相关文章</h3>
+                                        <a href="article.html" class="more">更多</a>
+                                    </div>
+                                    <ul class="article">
+                                        <li class="xs-border-bottom">
+                                            <div class="title-top">
+                                                <p><a href="article_page1.html">阿里金融低调扩阿里金融低调扩张再设小贷公司神秘离岸公司浮现贷公司神秘离岸公司浮现</a></p>
+                                            </div>
+                                        </li>
+                                        <li class="xs-border-bottom">
+                                            <div class="title-top">
+                                                <p><a href="article_page1.html">银行信贷向小微企业倾斜提供定制的金融产品</a></p>
+                                            </div>
+                                        </li>
+                                        <li class="xs-border-bottom">
+                                            <div class="title-top">
+                                                <p><a href="article_page1.html">宁波银行入驻金华浙中金融再添新军</a></p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="title-top">
+                                                <p><a href="article_page1.html">上半年西藏贷款突破800亿元</a></p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 hidden-xs hidden-sm rightTab">
+            <div class="col-lg-12 col-md-12 pl0 pr0">
+                    <div class="border-1px box-icon-side">
+                        <i class="glyphicon icon-song"></i>
+                        <h2 class="title">公告</h2>
+                        <a href="#">
+                            <p>关于你我贷2017国庆中秋假期工作安排的公告</p>
+                        </a>
+                        <a href="#">
+                            <p>关于9月5日你我贷400客服热线升级的公告</p>
+                        </a>
+                    </div>
+                </div>
+            <div class="col-lg-12 col-md-12 mt20 pl0 pr0">
+                <div class="border-1px box-icon-side">
+                    <i class="glyphicon icon-seo13"></i>
+                    <h2 class="title">2017年10月成交数据</h2>
+                    <p class="font18">累计交易总额</p>
+                    <p class="font36 colorBlue fontW600">324093万</p>
+                    <p class="font18">成功借款人数：<span class="colorBlue" data-speed="3000">660308</span></p>
+                    <p class="font18">成功投资人数：<span class="colorBlue" data-speed="3000">660308</span></p>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 mt20 pl0 pr0 border-1px">
+                <div class=" box-icon-side border-2">
+                    <i class="glyphicon icon-seo14"></i>
+                    <h2 class="title">安全保障计划</h2>
+                    <div class="col-xs-4 col-lg-4 pl0">
+                        <i class="icon-seo17 seoicon"></i>
+                        <p class="textIc">本金保障</p>
+                    </div>
+                    <div class="col-xs-4 col-lg-4 pl0">
+                        <i class="icon-seo15 seoicon"></i>
+                        <p class="textIc">交易安全</p>
+                    </div>
+                    <div class="col-xs-4 col-lg-4 pl0">
+                        <i class="icon-seo16 seoicon"></i>
+                        <p class="textIc">隐私保护</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row xs-mb20 bmb20 hidden-xs">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="span-one-second xs-border-1px">
+                <div class="header-top clearfix">
+                    <h3>宁波贷款相关文章</h3>
+                    <a href="http://shanghai.niwodai.com/daikuan-article/1/" class="more">更多</a>
+                </div>
+                <ul class="article">
+                    <li class="xs-border-bottom">
+                        <div class="title-top">
+                            <p><a href="#">
+                                阿里金融低调扩阿里金融低调扩张再设小贷公司神秘离岸公司浮现贷公司神秘离岸公司浮现
+                            </a></p>
+                        </div>
+                        <p class="textSize hidden-xs">
+                           模拟审批、并联审批、电子规划审批齐上阵，项目用地置换拆迁、办公场所租赁装修全推进，子女就业、健康医疗、社会保险、廉租房申请服务一条龙。“十万
+                        </p>
+                    </li>
+                    <li class="xs-border-bottom">
+                        <div class="title-top">
+                            <p>银行信贷向小微企业倾斜提供定制的金融产品</p>
+                        </div>
+                        <a href="#" class="textSize hidden-xs">
+                            模拟审批、并联审批、电子规划审批齐上阵，项目用地置换拆迁、办公场所租赁装修全推进，子女就业、健康医疗、社会保险、廉租房申请服务一条龙。“十万
+                        </a>
+                    </li>
+                    <li class="xs-border-bottom">
+                        <div class="title-top">
+                            <p>宁波银行入驻金华浙中金融再添新军</p>
+                        </div>
+                        <a href="#" class="textSize hidden-xs">
+                            模拟审批、并联审批、电子规划审批齐上阵，项目用地置换拆迁、办公场所租赁装修全推进，子女就业、健康医疗、社会保险、廉租房申请服务一条龙。“十万
+                        </a>
+                    </li>
+                    <li>
+                        <div class="title-top">
+                            <p>上半年西藏贷款突破800亿元</p>
+                        </div>
+                        <a href="#" class="textSize hidden-xs">
+                            模拟审批、并联审批、电子规划审批齐上阵，项目用地置换拆迁、办公场所租赁装修全推进，子女就业、健康医疗、社会保险、廉租房申请服务一条龙。“十万
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs">
+            <div class="span-one-second xs-border-1px">
+                <div class="header-top clearfix">
+                    <h3>宁波投资相关文章</h3>
+                    <a href="http://shanghai.niwodai.com/touzi-article/1/" class="more">更多</a>
+                </div>
+                <ul class="article">
+                    <li class="xs-border-bottom">
+                        <div class="title-top">
+                            <p><a href="#">阿里金融低调扩阿里金融低调扩张再设小贷公司神秘离岸公司浮现贷公司神秘离岸公司浮现</a></p>
+                        </div>
+                        <a href="#" class="textSize hidden-xs">
+                            模拟审批、并联审批、电子规划审批齐上阵，项目用地置换拆迁、办公场所租赁装修全推进，子女就业、健康医疗、社会保险、廉租房申请服务一条龙。“十万
+                        </a>
+                    </li>
+                    <li class="xs-border-bottom">
+                        <div class="title-top">
+                            <p>银行信贷向小微企业倾斜提供定制的金融产品</p>
+                        </div>
+                        <a href="#" class="textSize hidden-xs">
+                            模拟审批、并联审批、电子规划审批齐上阵，项目用地置换拆迁、办公场所租赁装修全推进，子女就业、健康医疗、社会保险、廉租房申请服务一条龙。“十万
+                        </a>
+                    </li>
+                    <li class="xs-border-bottom">
+                        <div class="title-top">
+                            <p>宁波银行入驻金华浙中金融再添新军</p>
+                        </div>
+                        <a href="#" class="textSize hidden-xs">
+                            模拟审批、并联审批、电子规划审批齐上阵，项目用地置换拆迁、办公场所租赁装修全推进，子女就业、健康医疗、社会保险、廉租房申请服务一条龙。“十万
+                        </a>
+                    </li>
+                    <li>
+                        <div class="title-top">
+                            <p>上半年西藏贷款突破800亿元</p>
+                        </div>
+                        <a href="#" class="textSize hidden-xs">
+                            模拟审批、并联审批、电子规划审批齐上阵，项目用地置换拆迁、办公场所租赁装修全推进，子女就业、健康医疗、社会保险、廉租房申请服务一条龙。“十万
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row xs-mb20 bmb20">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="span-one-second xs-border-1px">
+                <div class="header-top clearfix">
+                    <h3>城市网点</h3>
+                </div>
+                <div class="network">
+                    房贷、车贷、寿险保单、社保公积金，只要你有其中一项，立可申请房贷、车贷、寿险保单、社保公积金，只要你有其中一项，立可申请房贷、车贷、寿险保单、社保公积金，只要你有
+                    其中一项，立可申请房贷、车贷、寿险保单、社保公积金，只要你有房贷、车贷、寿险保单、社保公积金，只要你有房贷、车贷、寿险保单、社保公积金，只要你有其中一项，立可申请房贷、车贷、寿险保单、社保公积金，只要你有其中一项，立可申请房贷、车贷、寿险保单、社保公积金，只要你有其中一项，立可申请房贷、车贷、寿险保单、社保公积金，只要你有
+                    其中一项，立可申请房贷、车贷、寿险保单、社保公积金，只要你有其中一项，立可申请房贷、车贷、寿险保单、社保公积金，只要你有其中一项，立可申请房贷、车贷、寿险保单、社保公积金，只要你有其中一项，立可申请房贷、车贷、寿险保单、社保公积金，只要你有其中一项，立可申请其中一项，立可申请房贷、车贷、寿险保单、社保公积金，只要你有其中一项，立可申请其中一项，立可申请
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- /container -->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="http://static.niwodai.com/Public/Static/201603/js/nwd_common.js?v=20160802043103.js"></script>
+<script type="text/javascript">
+    $.ajax({
+        type: "post",
+        url: "/index.do?method=showLogo",
+        dataType: "json",
+        contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+        success: function(returnDate){
+            if(returnDate){
+                $("#headLogo").html(returnDate.artContent);
+            }
+        }
+    });
+
+    var nwdUser = getCookie("cookieUname");
+    if(!window.httpsUrl){
+        httpsUrl = "";
+    }
+    if(!window.httpUrl){
+        httpUrl = "";
+    }
+    if(nwdUser){
+        var loginHtml = "<input type='hidden' value='' id='log_userid'/>" +
+            "<input type='hidden' value='"+nwdUser+"' id='log_username'/>" +
+            "您好，<a href='"+httpsUrl+"/member/Investors.html' class='mar_l10 toplogin'>"+nwdUser+"</a>"+
+            "<a href='"+httpUrl+"/loginOut.html' id='loginOut' class='mar_r10 mar_l10 toplogin'>退出</a>";
+
+        $('#login_bt').html(loginHtml);
+
+        var uPhoto = getCookie("cookieUphoto");
+        if(uPhoto){
+            uPhoto = uPhoto.replace(/\"/g, "");
+            $("#smallImg").prop("src","/member1/memberPhotoView.do?imgPath="+uPhoto);
+        }else{
+            $("#smallImg").prop("src",staticCss+"/manage/images/touxiang.jpg");
+        }
+        $('#static_banner_login').html("<a class='btn_orange' href='"+httpsUrl+"/member/Investors.html' rel='nofollow' title='账户中心'>账户中心</a>");
+    } else {
+        var loginHtml ="您好，<a href='"+httpsUrl+"/login.html' class='mar_l10 toplogin' title='登录'>请登录</a>"+
+            "<a href='http://www.niwodai.com/register.html' class='mar_r10 mar_l10 toplogin' title='注册'>免费注册</a>";
+        $('#login_bt').html(loginHtml);
+    }
+    function getCookie(name) {
+        if (document.cookie.length > 0) {
+            c_start = document.cookie.indexOf(name + "=");
+            if (c_start != -1) {
+                c_start = c_start + name.length + 1;
+                c_end = document.cookie.indexOf(";", c_start);
+                if (c_end == -1)
+                    c_end = document.cookie.length;
+                return unescape(document.cookie.substring(c_start, c_end));
+            }
+        }
+        return "";
+    }
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+<body>
+
+<div id="topBar" class="hidden-xs ">
+    <div class="container">
+        <!-- right -->
+        <ul class="top-links list-inline pull-right topLine-right">
+            <li class="text-welcome hidden-xs-down">
+                <span class="font16 color999" id="login_bt">您好，
+                    <a href="https://member.niwodai.com/login.html" class="mar_l10 toplogin" title="登录">请登录</a>
+                    <a href="http://www.niwodai.com/register.html" class="mar_r10 mar_l10 toplogin" title="注册">免费注册</a>
+                </span>
+            </li>
+            <li class="mr10">
+                <span class="font14">
+					<a href="http://www.niwodai.com/enterprise/index/regInit.do?artId=5820160000015802" class="mar_r10 mar_l10 toplogin">企业理财</a>
+				</span>
+            </li>
+            <li class="mr10 mobileIcon">
+                <span class="font14"><a href="http://www.niwodai.com/event.mhtml?artId=5820160000008230&amp;h&amp;f" class="link_mobile mar_r20" target="_blank">
+                    <i class="icon icon_moible">&nbsp;</i>手机客户端
+					<map name="Map">
+                      <area shape="rect" coords="154,40,256,153" href="http://www.niwodai.com/event.mhtml?artId=5820160000008230&amp;h&amp;f" target="_blank">
+                      <area shape="rect" coords="424,41,517,150" href="http://www.niwodai.com/event.mhtml?&amp;artId=3800000794998139" target="_blank">
+                    </map>
+					</a>
+                </span>
+                <div class="mobileImg">
+                    <img src="https://static.niwodai.com/Public/Static/201603/css/font/topbg_b14926.png" usemap="#Map">
+                </div>
+            </li>
+            <li class="mr10 weixinIcon">
+                <span class="font14">
+                    <a href="javascript:;" class="link_weibo mar_r10" target="_blank">
+                        <i class="icon icon_weibo">&nbsp;</i>
+                        微信客服
+                    </a>
+                </span>
+                <div class="weixinImg">
+                    <img src="https://static.niwodai.com/Public/Static/201603/css/font/topbg_b14925.png" class="">
+                </div>
+            </li>
+            <li class="mr10">
+                <span class="font14"><a href="http://weibo.com/niwodai" target="_blank" class="link_weixin"><i class="icon icon_weixin">&nbsp;</i></a></span>
+            </li>
+            <li class="font14 color999">
+                市场有风险，投资需谨慎
+            </li>
+        </ul>
+        <!-- left -->
+        <ul class="top-links list-inline topLine visible-lg visible-md pull-left">
+            <li>
+                <span class="hotLink">
+                    <i class="icon icon_tel">&nbsp;</i>
+                    客服热线
+                    <em class="Numfont mar_l10">
+                    &nbsp;400-680-8888</em>
+                </span>
+            </li>
+        </ul>
+
+    </div>
+</div>
+
+<div id="header" class="navbar-toggleable-md sticky shadow-after-3 clearfix hidden-xs ">
+    <!-- TOP NAV -->
+    <header id="topNav">
+        <div class="container">
+            <!-- Logo -->
+            <a class="pull-left logoDream" title="给梦想可能" href="http://www.niwodai.com">
+                <h1 class="pull-left logo">
+                    <img width="90%" alt="你我贷" src="https://static.niwodai.com/Public/Static/201603/images/logo.png" class="img-responsive">
+                </h1>
+                <div class="pull-left slogan hidden-sm hidden-md" id="headLogo">
+                    <img src="https://static.niwodai.com/Public/Static/201603/images/slogan.png" align="给梦想可能" class="img-responsive" width="90%">
+                </div>
+            </a>
+
+
+            <div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
+                <nav class="nav-main">
+                    <ul id="topMain" class="nav nav-pills nav-main">
+                        <li class="dropdown"><!-- PAGES -->
+                            <a title="首页" href="http://www.niwodai.com" rel="nofollow" class="nav_link">首页</a>                        </li>
+                        <li class="dropdown"><!-- PAGES -->
+                            <a class="dropdown-toggle" href="#">
+                                我要投资
+                            </a>
+                            <ul class="dropdown-menu" style="padding-top: 45px;top: 15px">
+                                <li class="dropdown">
+                                    <a href="http://www.niwodai.com/inteBid/loadingInteBidPage.do" class="investName_link">有道智投</a>                                </li>
+                                <li class="dropdown">
+                                    <a href="https://member.niwodai.com/baiduFina/newPeople.do" class="investName_link">新手专区</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="https://member.niwodai.com/xiangmu" class="investName_link">新标专区</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="https://member.niwodai.com/zhuanrang/" class="investName_link">转让专区</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><!-- PAGES -->
+                            <a class="dropdown-toggle" href="#">
+                                我要借款
+                            </a>
+                            <ul class="dropdown-menu" style="padding-top: 45px;top: 15px">
+                                <li class="dropdown">
+                                    <a href="http://www.niwodai.com/daikuan/jiekuan.html" class="investName_link">借款产品</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="http://www.niwodai.com/help/jiekshenqing.html" class="investName_link">借款攻略</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown hidden-sm"><!-- PAGES -->
+                            <a title="新手导航" href="http://www.niwodai.com/activity.mhtml?artId=3800001227739922&amp;f&amp;h" class="nav_link">新手导航 </a>
+                        </li>
+                        <li class="dropdown hidden-sm"><!-- PAGES -->
+                            <a title="社区" href="http://club.niwodai.com" class="nav_link">社区 </a>
+                        </li>
+                        <li class="dropdown hidden-sm"><!-- PAGES -->
+                            <a href="http://static2.niwodai.com/Public/Static/nwd/website/pc/disclosure/index.html" class="nav_link">信息披露</a>
+                        </li>
+                        <li class="dropdown"><!-- PAGES -->
+                            <div class=" LedgerCon" href="#">
+                                <a class="navphoto pull-left" href="https://member.niwodai.com/member/Investors.html" title="我的账户">
+                                    <i class=" relatives">
+                                        <img id="small-tx" src="https://static.niwodai.com/Public/Static/201603/manage/img/smalltx.png">
+                                        <img id="smallImg" alt="头像" src="https://static.niwodai.com/Public/Static/201603/manage/images/touxiang.jpg" class="smallmytxPic" style="top: 0">
+                                    </i></a>
+
+                                <div class="Ledger_name pad_t5">
+                                    <a title="我的账户" href="http://www.niwodai.com/login.html" class="dropdown-toggle">我的账户</a>
+                                    <em class="icon_base  icon_base_navedown mar_l10"></em>
+                                </div>
+                            </div>
+                            <ul class="dropdown-menu" style="padding-top: 52px;top: 8px;min-width: 155px">
+                                <li class="dropdown">
+                                    <a href="http://www.niwodai.com/login.html" class="listName_link">消息中心</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="http://www.niwodai.com/login.html" class="listName_link">资金记录</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="http://www.niwodai.com/login.html" class="listName_link">有道智投</a>                                </li>
+                                <li class="dropdown">
+                                    <a href="http://www.niwodai.com/login.html" class="listName_link">我的债权</a>                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </nav>
+            </div>
+
+        </div>
+    </header>
+    <!-- /Top Nav -->
+
+</div>
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top visible-xs ">
+    <div class="container">
+        <div class="navbar-header ">
+            <a class="navbar-brand-logo" href="#"><img src="img/logo.png" alt="" width="60%" class="img-responsive center-block"></a>
+            <button class="navbar-toggle navbar-toggle-down" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="float: left;margin-left: 15px">
+                <span class="glyphicon glyphicon-menu-left" onClick="javascript :history.back(-1);"></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top visible-xs ">
+    <div class="container">
+        <div class="navbar-header ">
+            <a class="navbar-brand-logo" href="#"><img src="img/logo.png" alt="" width="60%" class="img-responsive center-block"></a>
+            <button class="navbar-toggle navbar-toggle-down" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="float: left;margin-left: 15px">
+                <span class="glyphicon glyphicon-menu-left" onClick="javascript :history.back(-1);"></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container-fluid posts bgColor999">
+    <!-- Example row of columns -->
+    <div class="row content mb20 ">
+        <div class="col-sm-12">
+            <div class="span-one-second">
+                <div class="header-top clearfix">
+                    <h3 class="textBold">宁波贷款相关文章</h3>
+                </div>
+                <ul class="article bgCol">
+                    <li class="xs-border-bottom">
+                        <div class="title-top">
+                            <p><a href="#">阿里金融低调扩阿里金融低调扩张再设小贷公司神秘离岸公司浮现贷公司神秘离岸公司浮现</a></p>
+                        </div>
+                    </li>
+                    <li class="xs-border-bottom">
+                        <div class="title-top">
+                            <p><a href="">银行信贷向小微企业倾斜提供定制的金融产品</a></p>
+                        </div>
+                    </li>
+                    <li class="xs-border-bottom">
+                        <div class="title-top">
+                            <p><a href="">宁波银行入驻金华浙中金融再添新军</a></p>
+                        </div>
+                    </li>
+                    <li class="xs-border-bottom">
+                        <div class="title-top">
+                            <p><a href="">上半年西藏贷款突破800亿元</a></p>
+                        </div>
+                    </li>
+                    <li class="xs-border-bottom">
+                        <div class="title-top">
+                            <p><a href="">上半年西藏贷款突破800亿元</a></p>
+                        </div>
+                    </li>
+                    <li class="xs-border-bottom">
+                        <div class="title-top">
+                            <p><a href="">上半年西藏贷款突破800亿元</a></p>
+                        </div>
+                    </li>
+                    <li class="xs-border-bottom">
+                        <div class="title-top">
+                            <p><a href="">上半年西藏贷款突破800亿元</a></p>
+                        </div>
+                    </li>
+                    <li class="xs-border-bottom">
+                        <div class="title-top">
+                            <p><a href="">上半年西藏贷款突破800亿元</a></p>
+                        </div>
+                    </li>
+                    <li class="xs-border-bottom">
+                        <div class="title-top">
+                            <p><a href="">上半年西藏贷款突破800亿元</a></p>
+                        </div>
+                    </li>
+                    <li class="xs-border-bottom">
+                        <div class="title-top">
+                            <p><a href="">上半年西藏贷款突破800亿元</a></p>
+                        </div>
+                    </li>
+                    <li class="xs-border-bottom">
+                        <div class="title-top">
+                            <p><a href="">上半年西藏贷款突破800亿元</a></p>
+                        </div>
+                    </li>
+                    <li class="xs-border-bottom">
+                        <div class="title-top">
+                            <p><a href="">上半年西藏贷款突破800亿元</a></p>
+                        </div>
+                    </li>
+                    <li class="xs-border-bottom">
+                        <div class="title-top">
+                            <p><a href="">上半年西藏贷款突破800亿元</a></p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div> <!-- /container -->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="http://static.niwodai.com/Public/Static/201603/js/nwd_common.js?v=20160802043103.js"></script>
+<script type="text/javascript">
+    $.ajax({
+        type: "post",
+        url: "/index.do?method=showLogo",
+        dataType: "json",
+        contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+        success: function(returnDate){
+            if(returnDate){
+                $("#headLogo").html(returnDate.artContent);
+            }
+        }
+    });
+
+    var nwdUser = getCookie("cookieUname");
+    if(!window.httpsUrl){
+        httpsUrl = "";
+    }
+    if(!window.httpUrl){
+        httpUrl = "";
+    }
+    if(nwdUser){
+        var loginHtml = "<input type='hidden' value='' id='log_userid'/>" +
+            "<input type='hidden' value='"+nwdUser+"' id='log_username'/>" +
+            "您好，<a href='"+httpsUrl+"/member/Investors.html' class='mar_l10 toplogin'>"+nwdUser+"</a>"+
+            "<a href='"+httpUrl+"/loginOut.html' id='loginOut' class='mar_r10 mar_l10 toplogin'>退出</a>";
+
+        $('#login_bt').html(loginHtml);
+
+        var uPhoto = getCookie("cookieUphoto");
+        if(uPhoto){
+            uPhoto = uPhoto.replace(/\"/g, "");
+            $("#smallImg").prop("src","/member1/memberPhotoView.do?imgPath="+uPhoto);
+        }else{
+            $("#smallImg").prop("src",staticCss+"/manage/images/touxiang.jpg");
+        }
+        $('#static_banner_login').html("<a class='btn_orange' href='"+httpsUrl+"/member/Investors.html' rel='nofollow' title='账户中心'>账户中心</a>");
+    } else {
+        var loginHtml ="您好，<a href='"+httpsUrl+"/login.html' class='mar_l10 toplogin' title='登录'>请登录</a>"+
+            "<a href='http://www.niwodai.com/register.html' class='mar_r10 mar_l10 toplogin' title='注册'>免费注册</a>";
+        $('#login_bt').html(loginHtml);
+    }
+    function getCookie(name) {
+        if (document.cookie.length > 0) {
+            c_start = document.cookie.indexOf(name + "=");
+            if (c_start != -1) {
+                c_start = c_start + name.length + 1;
+                c_end = document.cookie.indexOf(";", c_start);
+                if (c_end == -1)
+                    c_end = document.cookie.length;
+                return unescape(document.cookie.substring(c_start, c_end));
+            }
+        }
+        return "";
+    }
+</script>
+<script>
+    $.ajax({
+        type : "post",
+        url : "/transactionDetails",
+        contentType : "application/x-www-form-urlencoded; charset=UTF-8",
+        contentType : "application/x-javascript; charset=UTF-8",
+        contentType : "text/html",
+        contentType : "application/json",
+        dataType:"json",
+        success : function(data) {
+            $("#myTargetElement").html(data.totalBorrower);//成功借款人数
+        }
+    });
+</script>
+
+</body>
+</html>
