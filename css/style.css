@@ -55,7 +55,7 @@ a:hover{color:#000}
 .table>tbody>tr>td,.table>tfoot>tr>td,.table>thead>tr>td{border-top:0;border-bottom:1px solid #ddd;padding:0 0 20px 0}
 .table>thead>tr>th{border-bottom:0;padding:22px 22px 22px 9px}
 .colorBlack{color:#333;font-weight:600}
-.label{padding:.8em 1.8em .8em;font-size: 12px}
+.label{padding:.8em 1.4em .8em;font-size: 12px}
 .label-orange{background:#ff730a}
 .table-responsive .table-wh:last-child{margin-bottom:20px}
 .table:last-child td{border-bottom:0}
