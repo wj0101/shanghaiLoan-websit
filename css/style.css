@@ -1,3 +1,9 @@
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 6px;
+    padding-left: 6px;
+}
 .border-1px{border:1px solid #dcdddc}
 .xs-border-1px{border:1px solid #dcdddc}
 .font20{font-size:20px;font-weight:900;color:#333}
@@ -11,16 +17,19 @@ b{font-weight: 400}
 .media{overflow:inherit}
 .entry-card{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-wrap:wrap;flex-wrap:wrap}
 .mt30{margin-top:30px}
+.mt12{margin-top:12px}
 .mb20{margin-bottom:20px}
 .mr10{margin-right:10px}
 .mb30{margin-bottom:30px}
+.mb12{margin-bottom:12px}
 button{    border: 0;}
+.fontwt{font-weight: 600}
 .nav>li>a:focus, .nav>li>a:hover{background-color: #fff}
 .header a:hover{color: #999}
 .table tr:nth-child(odd) td,.table th{background: #fff}
 .jumbotron{margin-bottom:0;padding-top: 0}
 .mt20{margin-top:20px}
-.pl0{padding-left:0}
+.pl0{padding-left:0;}
 .pr0{padding-right:0}
 .bgColor999{background-color: #f3f3f3}
 a{text-decoration:none}
@@ -62,7 +71,7 @@ a:hover{color:#000}
 .table-responsive .moreli{position: absolute;right: 33px;top: 17px}
 .table-responsive>.moreli>a:focus,.nav>.moreli>a:hover{color:#2577e3;background-color:transparent}
 .table-responsive>.moreli>a.more{color:#2577e3;font-size:14px;}
-.mobile-description-text{padding:50px 10px 20px 34px;text-align:left;width:60%}
+.mobile-description-text{padding:0 10px 20px 34px;text-align:left;width:60%}
 .main-description-text{font-size:26px;font-weight:600}
 .tags{text-align:center;padding:2px 15px;border:1px solid #2577e3;border-radius:10px}
 .subtext{color:#666}
@@ -77,7 +86,7 @@ a.circularText:hover{color:#fff;text-decoration:none}
 .box-icon-side .title{font-size:20px;font-weight:600}
 .box-icon-side a p{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:14px;color:#666}
 .seoicon{position:absolute;left:11px;top:22px;font-size:40px;color:#999;display:inline-block}
-.icon-seo17{color:#ff730a}
+.icon-seo17{color:#059eef}
 .icon-seo15{color:#006cac}
 .icon-seo16{color:#3f8302}
 .guidance::after{position:absolute;top:-11px;left:50%;margin-left:-5px;content:'';width:0;height:0;border-right:10px solid transparent;border-bottom:20px solid #fd950e;border-left:10px solid transparent;z-index:-1}
@@ -104,7 +113,7 @@ ul.article{padding-left: 40px}
 .investIcon{background: url("../img/soe01_05.png") no-repeat right bottom;}
 .loanIcon{background: url("../img/soe01_05-04.png") no-repeat right bottom;}
 .text-center h3.fw-300{font-size: 18px;font-weight: 600}
-
+.hidden-xs .span-one-second  .title-top a:hover{text-decoration: underline}
 
 
 /** Preloader
@@ -320,10 +329,10 @@ ul.dropdown-menu li a .glyphicon{color: #999;font-size: 15px;float: right;top: 0
     .label{font-size: 14px}
     .nav-pills>li>a { font-size: 20px;}
     .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{font-size: 20px;}
-    .main-description-text{font-size: 24px}
+    .main-description-text{font-size: 24px;text-indent: -10px;}
     .main-mobile-image-container{  padding: 31px;}
     ul.article li .title-top span{overflow: hidden;text-overflow:ellipsis;white-space: nowrap;display: block}
-    ul.article li .title-top:before{width: 5px;height: 5px;border-radius: 50%;background-color: #2577e3;display: inline-block;position: relative;left: -21px;top: 17px;content: ""}
+    ul.article li .title-top:before{width: 5px;height: 5px;border-radius: 50%;background-color: #2577e3;display: inline-block;position: relative;left: -21px;top: 20px;content: ""}
     .bmb20{margin-bottom: 20px}
     .navbar-toggleable-md .navbar-collapse {display: block!important; }
     #topNav.nav-main>.nav>li>a{padding: 10px}
@@ -340,15 +349,16 @@ ul.dropdown-menu li a .glyphicon{color: #999;font-size: 15px;float: right;top: 0
     .nav-pills>li>a { font-size: 20px;}
     .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{font-size: 20px;}
     .guidance{font-size: 12px}
-    .main-description-text{font-size: 20px}
+    .main-description-text{font-size: 20px;text-indent: -10px;}
     .main-mobile-image-container{  padding: 26px;}
     ul.article li .title-top span{overflow: hidden;text-overflow:ellipsis;white-space: nowrap;display: block}
-    ul.article li .title-top:before{width: 5px;height: 5px;border-radius: 50%;background-color: #2577e3;display: inline-block;position: relative;left: -21px;top: 17px;content: ""}
+    ul.article li .title-top:before{width: 5px;height: 5px;border-radius: 50%;background-color: #2577e3;display: inline-block;position: relative;left: -21px;top: 21px;content: ""}
     .box-icon-side .textIc{padding-top: 72px}
     .bmb20{margin-bottom: 20px}
     .navbar-toggleable-md .navbar-collapse {
         display: block!important;
     }
+    .mobile-description-text{    padding: 20px 10px 33px 34px;}
 }
 @media (min-width: 1200px) {
     /*在大于1200像素的屏幕里,这里的样式才生效*/
@@ -358,9 +368,9 @@ ul.dropdown-menu li a .glyphicon{color: #999;font-size: 15px;float: right;top: 0
     .table>thead>tr>th{font-size: 18px;}
     .nav-pills>li>a { font-size: 20px;}
     .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{font-size: 20px;}
-    .main-description-text{font-size: 26px}
+    .main-description-text{font-size: 26px;text-indent: -10px;margin-top: 10px}
     ul.article li .title-top span{overflow: hidden;text-overflow:ellipsis;white-space: nowrap;display: block}
-    ul.article li .title-top:before{width: 5px;height: 5px;border-radius: 50%;background-color: #2577e3;display: inline-block;position: relative;left: -21px;top: 17px;content: ""}
+    ul.article li .title-top:before{width: 5px;height: 5px;border-radius: 50%;background-color: #2577e3;display: inline-block;position: relative;left: -21px;top: 20px;content: ""}
     .box-icon-side .textIc{padding-top: 91px}
     .seoicon{top: 36px}
     .bmb20{margin-bottom: 20px}
@@ -394,3 +404,7 @@ ul.dropdown-menu li a .glyphicon{color: #999;font-size: 15px;float: right;top: 0
     .nav>li>a { padding: 18px 47px;}
 
 }
+
+
+
+
